@@ -1,0 +1,9 @@
+version: '3.5'
+
+services:
+    cypress:
+        image: cypress
+        build: ./docker/cypress
+        volumes:
+            - ./cypress:/app/cypress
+            - ./cypress/cypress.json:/app/cypress.json
